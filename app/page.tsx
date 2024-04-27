@@ -1,50 +1,69 @@
-import AcmeLogo from "@/app/ui/acme-logo";
-// import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { lusitana } from "@/app/ui/fonts";
-import Image from "next/image";
+import { HeaderHeading, TextXl } from "@/app/ui/Text/TextStyles";
+import { BackgroundBeams } from "./ui/background-beams";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col p-6">
-      <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
-        <AcmeLogo />
-      </div>
-      <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
-        <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
-          <p
-            className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
-          >
-            <strong>Welcome to Acme.</strong> This is the example for the{" "}
-            <a href="https://nextjs.org/learn/" className="text-blue-500">
-              Next.js Learn Course
-            </a>
-            , brought to you by Vercel.
-          </p>
+    <>
+      <div className="bg-black">
+        <nav className="flex items-center justify-between container py-6 z-50 relative">
+          <h3 className="text-2xl font-bold text-white">Abdul Rehman</h3>
+          <ul className="flex gap-x-4 px-2 rounded-full py-3 bg-gray-800 border  border-gray-700">
+            <li>
+              <Link
+                href="/"
+                className="text-white bg-slate-600 px-4 py-2 rounded-full"
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="text-white px-4 py-2">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="text-white px-4 py-2">
+                Skills
+              </Link>
+            </li>
+          </ul>
           <Link
-            href="/login"
-            className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
+            href="/contact"
+            className="bg-[#ffee00] flex items-center gap-x-4 pl-4 pe-3 py-2.5 font-semibold rounded-full text-black"
           >
-            <span>Log in</span>
+            Let's Talk{" "}
+            <span className="w-8 h-8 p-2 rounded-full bg-white flex items-center justify-center">
+              <FaArrowRight />
+            </span>
           </Link>
+        </nav>
+        <div className="container">
+          <header className="flex lg:flex-col items-center justify-center pt-24 pb-20">
+            <h3 className="text-2xl text-white font-medium text-center">
+              Hi there
+            </h3>
+            <HeaderHeading className={`mt-8 text-white text-center xl:px-12`}>
+              I am Abdul Rahman.{" "}
+              <span className="text-[#ffee00] rounded-lg capitalize">
+                front end developer
+              </span>{" "}
+              having expertise in creating dynamic interactive web experiences
+            </HeaderHeading>
+            <TextXl
+              className={`lg:mt-12 text-white leading-[170%] text-center xl:w-[70%]`}
+            >
+              Seasoned front-end developer with a knack for translating designs
+              into pixel-perfect, responsive interfaces. Experienced in
+              integrating APIs to deliver dynamic and interactive web solutions.
+            </TextXl>
+            <BackgroundBeams />
+          </header>
         </div>
-        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          <Image
-            src="/hero-desktop.png"
-            width={1000}
-            height={760}
-            className="hidden md:block"
-            alt="Screenshots of the dashboard project showing desktop version"
-          />
-          <Image
-            src="/hero-mobile.png"
-            width={560}
-            height={620}
-            className="block md:hidden"
-            alt="Screenshots of the dashboard project showing desktop version"
-          />
-        </div>
+
+        <main className="flex bg-white flex-col p-6"></main>
       </div>
-    </main>
+    </>
   );
 }
