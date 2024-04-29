@@ -34,6 +34,23 @@ const config: Config = {
         "2xl": "6rem",
       },
     },
+    colors: {
+      white: "#fff",
+      yellow: "#ffee00",
+      black: "#000",
+      gray: {
+        50: "#E9E9E9",
+        100: "#DCD4D4",
+        200: "#d3d3d3",
+        300: "#C7BBBB",
+        400: "#B6A7A7",
+        500: "#413838",
+        600: "#3C3232",
+        700: "#2A2A2A",
+        800: "#202425",
+        900: "#0B0B0B",
+      },
+    },
   },
   plugins: [
     addVariablesForColors,

@@ -8,7 +8,7 @@ import Link from "next/link";
 export function ThreeDCardDemo() {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-800  relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-white/[0.5] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+      <CardBody className="bg-gray-800 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-white/[0.5] w-auto  h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="30"
           className="text-xl font-bold text-white dark:text-white"
@@ -18,7 +18,7 @@ export function ThreeDCardDemo() {
         <CardItem
           as="p"
           translateZ="30"
-          className="text-white text-sm max-w-sm mt-2 dark:text-neutral-300"
+          className="text-white text-sm  mt-2 dark:text-neutral-300"
         >
           Hover over this card to unleash the power of CSS perspective
         </CardItem>
@@ -37,7 +37,7 @@ export function ThreeDCardDemo() {
             as={Link}
             href="https://twitter.com/mannupaaji"
             target="__blank"
-            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+            className="px-4 py-2 rounded-xl text-xs font-normal text-white"
           >
             Try now →
           </CardItem>
