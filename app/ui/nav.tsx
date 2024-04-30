@@ -5,6 +5,7 @@ import { MdArrowOutward } from "react-icons/md";
 import { RiMenu4Fill } from "react-icons/ri";
 import { Text2xl } from "./Text/TextStyles";
 import { usePathname } from "next/navigation";
+import { unbounded } from "@/app/ui/fonts";
 
 export default function NavBar() {
   const pathname = usePathname();
@@ -26,27 +27,44 @@ export default function NavBar() {
     <nav
       className={`z-50 w-full ${
         scroll
-          ? "fixed z-[200] top-0 left-0 bg-gray-600 py-4 backdrop-filter"
-          : " relative py-6"
+          ? "fixed z-[200] top-0 left-0 bg-gray-800 py-4 backdrop-filter"
+          : "relative py-4 lg:py-6"
       }`}
     >
       <div className="container flex items-center justify-between ">
         <div className="flex items-center">
-          <Text2xl className="text-white">Abdul Rehman</Text2xl>
+          <Text2xl className={`text-white ${unbounded.className}`}>
+            Abdul Rehman
+          </Text2xl>
           <ul className="md:flex space-x-6 hidden lg:ms-16">
             <li className="relative">
-              <Link href="/#home" className={`text-white`}>
+              <Link
+                href="/"
+                className={` ${
+                  pathname === "/" ? "text-yellow" : "text-white"
+                }`}
+              >
                 Home
               </Link>
             </li>
             <li className="relative">
-              <Link href="/#portfolio" className="text-white">
-                Portfolio
+              <Link
+                href="/about"
+                className={`${
+                  pathname === "/about" ? "text-yellow" : "text-white"
+                }`}
+              >
+                About
               </Link>
             </li>
             <li className="relative">
-              <Link href="/#about" className="text-white">
-                About
+              <Link
+                href="/projects"
+                className={`${
+                  pathname === "/projects" ? "text-yellow" : "text-white"
+                }`}
+              >
+                Projects
               </Link>
             </li>
           </ul>

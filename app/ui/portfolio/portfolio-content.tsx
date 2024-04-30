@@ -1,6 +1,8 @@
 import { HeadingH5 } from "../Text/TextStyles";
 import PortfolioCard from "./portfolio-card";
 import Image from "next/image";
+import Link from "next/link";
+import Acme from "@/public/hero-desktop.png";
 
 interface PortfolioContentProps {
   title?: string;
@@ -18,18 +20,28 @@ const PortfolioContent: React.FC<PortfolioContentProps> = ({
   slug,
 }) => {
   return (
-    <PortfolioCard>
-      <Image
-        src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        height="1000"
-        width="1000"
-        className="h-[400px] w-full object-cover rounded-xl group-hover/card:shadow-xl mb-4"
-        alt="thumbnail"
-        loading="lazy"
-      />
-      <HeadingH5 className="capitalize text-white mb-2">{title}</HeadingH5>
-      <div className="text-white">React, Next js, Tailwind CSS</div>
-    </PortfolioCard>
+    <>
+      <PortfolioCard>
+        <Image
+          src={Acme}
+          height="1000"
+          width="1000"
+          className="h-[400px] w-full object-cover rounded-xl group-hover/card:shadow-xl mb-4"
+          alt="thumbnail"
+          loading="lazy"
+        />
+        <HeadingH5 className="capitalize  text-white mb-2">{title}</HeadingH5>
+        <div className="text-white">React, Next js, Tailwind CSS</div>
+        <div className="mt-7 mb-2">
+          <Link
+            href="/"
+            className="border-[#6b6b6b33]  w-fit border bg-gray-700 rounded-lg text-white px-6 py-3 mt-4"
+          >
+            Project Highlights
+          </Link>
+        </div>
+      </PortfolioCard>
+    </>
   );
 };
 

@@ -36,7 +36,7 @@ export const HeadingH2: React.FC<TextProps> = ({
 export const HeadingH5: React.FC<TextProps> = ({
   children,
   className = "",
-}) => <h5 className={`text-xl font-medium  ${className}`}>{children}</h5>;
+}) => <h5 className={`text-xl font-bold  ${className}`}>{children}</h5>;
 export const BodyText: React.FC<TextProps> = ({ children, className = "" }) => (
   <p className={`text-lg font-medium  ${className}`}>{children}</p>
 );

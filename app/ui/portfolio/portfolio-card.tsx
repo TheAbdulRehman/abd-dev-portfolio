@@ -1,7 +1,7 @@
 const PortfolioCard = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <div className="rounded-lg p-4 border border-gray-500 bg-gray-700">
+      <div className="rounded-2xl relative overflow-hidden group p-4 lg:p-6 border border-[#6b6b6b33] bg-gray-800">
         {children}
       </div>
     </>
