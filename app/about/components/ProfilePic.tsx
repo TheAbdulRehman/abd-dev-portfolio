@@ -4,7 +4,7 @@ import Profile from "@/public/abdul-rehman.jpeg";
 const ProfilePic = () => {
   return (
     <>
-      <div className="rounded-2xl bg-gray-800 p-4">
+      <div className="rounded-2xl bg-gray-800 p-3">
         <Image
           src={Profile}
           height="1000"

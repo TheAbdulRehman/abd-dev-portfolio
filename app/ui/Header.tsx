@@ -6,12 +6,12 @@ const Header = () => {
     <>
       <div className="">
         <div className="container">
-          <header className="flex flex-col items-center justify-center pt-12">
-            <h3 className="text-2xl text-white font-medium text-center">
+          <header className="flex flex-col md:items-center md:justify-center pt-6 md:pt-9 lg:pt-12">
+            <h3 className="text-lg md:text-xl lg:text-2xl text-white font-medium md:text-center">
               Hi there
             </h3>
             <HeaderHeading
-              className={`mt-8 ${unbounded.className} text-white text-center xl:px-12`}
+              className={`mt-2 md:mt-6 lg:mt-8 ${unbounded.className} text-white text-start md:text-center xl:px-12`}
             >
               I am Abdul Rahman.{" "}
               <span className="text-yellow rounded-lg capitalize">
@@ -20,7 +20,7 @@ const Header = () => {
               having expertise in creating dynamic interactive web experiences
             </HeaderHeading>
             <h5
-              className={`lg:mt-12 text-xl font-medium text-white leading-[170%] text-center xl:w-[70%]`}
+              className={`mt-5 md:mt-9 lg:mt-12 text-base md:text-lg lg:text-xl md:font-medium text-white leading-[170%] md:text-center xl:w-[70%]`}
             >
               Seasoned front-end developer with a knack for translating designs
               into pixel-perfect, responsive interfaces. Experienced in

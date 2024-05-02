@@ -22,6 +22,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: {
+        base: "0 0px 8px rgba(0, 0, 0, 0.4)",
+        baseLight: "0 0px 8px rgba(129, 129, 129, 0.05)",
+      },
     },
     darkMode: "class",
     container: {
@@ -44,9 +48,9 @@ const config: Config = {
         200: "#cecece",
         300: "#b6b6b6",
         400: "#9d9d9d",
-        500: "#858585",
+        500: "#404040",
         600: "#545454",
-        700: "#3b3b3c",
+        700: "#333333",
         800: "#232323",
         900: "#0a0a0b",
       },
