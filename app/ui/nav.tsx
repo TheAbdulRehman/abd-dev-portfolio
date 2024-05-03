@@ -112,14 +112,14 @@ export default function NavBar() {
             <path
               d="M1 1.25H29"
               stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
             />
             <path
               d="M1 13.25H29"
               stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
             />
           </svg>
         </div>
@@ -144,19 +144,19 @@ export default function NavBar() {
                 height="30.6341"
                 rx="15.25"
                 stroke="white"
-                stroke-width="1.5"
+                strokeWidth="1.5"
               />
               <path
                 d="M9.4043 10.4053L22.5942 23.5952"
                 stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
               />
               <path
                 d="M9.4043 23.4609L22.5942 10.271"
                 stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
               />
             </svg>
           </div>

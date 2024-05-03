@@ -2,14 +2,13 @@ import { HeadingH5, TextBase } from "../Text/TextStyles";
 import PortfolioCard from "./portfolio-card";
 import Image from "next/image";
 import Link from "next/link";
-import Acme from "@/public/hero-desktop.png";
 import Tag from "../tag";
 
 interface PortfolioContentProps {
   title?: string;
   shortDescription?: string;
   img?: string;
-  tags?: string[];
+  tags: string[];
   slug?: string;
 }
 
@@ -30,13 +29,11 @@ const PortfolioContent: React.FC<PortfolioContentProps> = ({
                 {title}
               </HeadingH5>
               <TextBase className="text-white line-clamp-2">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-                similique laboriosam et. Ipsa enim soluta iure tenetur eligendi
-                quis reiciendis.
+                {shortDescription}
               </TextBase>
             </div>
             <div>
-              <Link href="/" className="">
+              <Link href={`/projects/${slug}`} className="">
                 <svg
                   width="24"
                   height="24"
@@ -63,7 +60,7 @@ const PortfolioContent: React.FC<PortfolioContentProps> = ({
             </div>
           </div>
           <Image
-            src={Acme}
+            src={`${img}`}
             height="1000"
             width="1000"
             className="h-[320px] md:h-[400px] w-full object-cover rounded-xl shadow-baseLight mb-4 lg:mb-6"
@@ -71,11 +68,7 @@ const PortfolioContent: React.FC<PortfolioContentProps> = ({
             loading="lazy"
           />
           <div className="flex gap-2.5 md:gap-3 flex-wrap">
-            {["Next.js", "React.js", "Node.js", "Tailwind CSS"].map(
-              (tag, i) => (
-                <Tag key={i} text={tag} />
-              )
-            )}
+            {tags && tags.map((tag, i) => <Tag key={i} text={tag} />)}
           </div>
         </div>
       </PortfolioCard>
