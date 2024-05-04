@@ -60,43 +60,34 @@ export default function NavBar() {
                 About
               </Link>
             </li>
-            <li className="relative">
-              <Link
-                href="/projects"
-                className={`${
-                  pathname === "/projects" ? "text-yellow" : "text-white"
-                }`}
-              >
-                Projects
-              </Link>
-            </li>
           </ul>
         </div>
         <ul className="md:flex space-x-6 hidden lg:ms-16">
           <li>
             <Link
-              href="mailto:im.abd.dev@gmail.com"
+              href="Abdul-Rehman-Resume.pdf"
               target="_blank"
-              className="text-white inline-flex items-center"
+              className="text-white hover:text-yellow inline-flex items-center"
             >
               <MdArrowOutward className="me-1 text-base" /> Resume
             </Link>
           </li>
           <li>
             <Link
-              href="/contact"
-              className="text-white inline-flex items-center"
+              href="https://www.linkedin.com/in/abdul-rahman-98075b224/"
+              target="_blank"
+              className="text-white hover:text-yellow inline-flex items-center"
             >
               <MdArrowOutward className="me-1 text-base" /> Linkedin
             </Link>
           </li>
-
           <li>
             <Link
-              href="/contact"
-              className="text-white inline-flex items-center"
+              href="mailto:im.abd.dev@gmail.com"
+              target="_blank"
+              className="text-white  hover:text-yellow inline-flex items-center"
             >
-              <MdArrowOutward className="me-1 text-base" /> Github
+              <MdArrowOutward className="me-1 text-base" /> Email
             </Link>
           </li>
         </ul>
@@ -183,42 +174,24 @@ export default function NavBar() {
                 About
               </Link>
             </li>
-            <li className="relative">
-              <Link
-                onClick={openNavHandler}
-                href="/projects"
-                className={`${
-                  pathname === "/projects" ? "text-yellow" : "text-white"
-                }`}
-              >
-                Projects
-              </Link>
-            </li>
           </ul>
           <ul className="space-y-4 mt-10 mb-5">
             <li>
               <Link
                 href="mailto:im.abd.dev@gmail.com"
                 target="_blank"
-                className="text-white inline-flex items-center"
+                className="text-white hover:text-yellow inline-flex items-center"
               >
                 <MdArrowOutward className="me-1 text-base" /> Resume
               </Link>
             </li>
             <li>
               <Link
-                href="/contact"
-                className="text-white inline-flex items-center"
+                href="Abdul-Rehman-Resume.pdf"
+                target="_blank"
+                className="text-white hover:text-yellow inline-flex items-center"
               >
                 <MdArrowOutward className="me-1 text-base" /> Linkedin
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                className="text-white inline-flex items-center"
-              >
-                <MdArrowOutward className="me-1 text-base" /> Github
               </Link>
             </li>
           </ul>

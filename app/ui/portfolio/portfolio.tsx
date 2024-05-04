@@ -23,14 +23,14 @@ const Portfolio = () => {
           />
         ))}
       </div>
-      <div className="container mt-8 lg:mt-14 mb-8 lg:mb-16  md:text-center">
+      {/* <div className="container mt-8 lg:mt-14 mb-8 lg:mb-16  md:text-center">
         <Link
           href="/"
           className="bg-white font-medium text-gray-900 px-6 py-3 rounded-lg"
         >
           Visit All Portfolios
         </Link>
-      </div>
+      </div> */}
     </>
   );
 };
