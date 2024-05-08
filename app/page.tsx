@@ -5,7 +5,9 @@ export default function Page() {
   return (
     <>
       <Header />
-      <Portfolio />
+      <div className="mb-8 md:mb-12 lg:mb-16">
+        <Portfolio />
+      </div>
     </>
   );
 }
