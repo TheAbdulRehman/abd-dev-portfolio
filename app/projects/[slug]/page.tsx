@@ -35,10 +35,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
   }
   return (
     <main className="container w-full md:w-4/5 lg:w-3/5 mt-4 md:mt-12 lg:mt-12">
-      <HeadingH3 className="mb-8 md:mb-10 lg:mb-12 text-white">
+      <HeadingH3 className="mb-7 md:mb-9 lg:mb-10 text-white">
         {selectedItem.title}
       </HeadingH3>
-      <div className="flex justify-between items-start mb-8 md:mb-10 lg:mb-12">
+      <div className="flex justify-between items-start mb-7 md:mb-9 lg:mb-12">
         <div>
           <h6 className="font-bold text-lg text-white mb-2">Role</h6>
           <TextBase className="text-white"> {selectedItem.role}</TextBase>
@@ -48,7 +48,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
           <TextBase className="text-white ">{selectedItem.techStack}</TextBase>
         </div>
       </div>
-      <div className="mb-8 md:mb-10 lg:mb-12">
+      <div className="mb-7 md:mb-9 lg:mb-12">
         <Link
           href={selectedItem.demoLink}
           target="_blank"
@@ -57,7 +57,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
           Live Demo
         </Link>
       </div>
-      <div className="mb-8 md:mb-10 lg:mb-12">
+      <div className="mb-7 md:mb-9 lg:mb-10">
         <Image
           src={selectedItem.featuredImage}
           height="500"
@@ -67,18 +67,16 @@ export default async function Page({ params }: { params: { slug: string } }) {
           loading="lazy"
         />
       </div>
-      <div className="mb-8 md:mb-10 lg:mb-12">
-        <BodyText className="font-bold text-white mb-4">
-          Project Details
-        </BodyText>
+      <div className="mb-7 md:mb-9 lg:mb-10">
+        <h6 className="font-bold text-lg text-white mb-4">Project Details</h6>
         <TextBase className="text-white">
           {selectedItem.longDescription}
         </TextBase>
       </div>
-      <div className="mb-8 md:mb-10 lg:mb-12">
+      <div className="mb-7 md:mb-9 lg:mb-10">
         <Link
           href="/"
-          className="bg-gray-700 px-4 py-2 border text-white rounded"
+          className="bg-gray-700 px-4 py-2 border border-gray-400 text-white rounded"
         >
           Home
         </Link>
