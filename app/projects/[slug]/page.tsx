@@ -35,14 +35,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
   }
   return (
     <main className="container w-full md:w-4/5 lg:w-3/5 mt-4 md:mt-12 lg:mt-12">
-      <div className="mb-8 md:mb-10 lg:mb-12">
-        <Link
-          href="#"
-          className="bg-gray-700 px-4 py-2 border text-white rounded"
-        >
-          back
-        </Link>
-      </div>
       <HeadingH3 className="mb-8 md:mb-10 lg:mb-12 text-white">
         {selectedItem.title}
       </HeadingH3>
@@ -67,10 +59,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
       </div>
       <div className="mb-8 md:mb-10 lg:mb-12">
         <Image
-          src={Acme}
-          height="1000"
-          width="1000"
-          className="h-[320px] md:h-[400px] w-full object-cover rounded-xl shadow-baseLight mb-4 lg:mb-6"
+          src={selectedItem.featuredImage}
+          height="500"
+          width="400"
+          className="h-auto w-full object-cover rounded-xl mb-4 lg:mb-6"
           alt="thumbnail"
           loading="lazy"
         />
@@ -85,10 +77,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
       </div>
       <div className="mb-8 md:mb-10 lg:mb-12">
         <Link
-          href="#"
+          href="/"
           className="bg-gray-700 px-4 py-2 border text-white rounded"
         >
-          back
+          Home
         </Link>
       </div>
     </main>
