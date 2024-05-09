@@ -25,7 +25,7 @@ const PortfolioContent: React.FC<PortfolioContentProps> = ({
         <div className="relative z-[3]">
           <div className="flex items-start justify-between">
             <div className="pe-2 md:pe-4 mb-4 md:mb-6">
-              <HeadingH5 className="capitalize text-white mb-1.5">
+              <HeadingH5 className="capitalize text-white mb-2">
                 {title}
               </HeadingH5>
               <TextBase className="text-white line-clamp-2">
