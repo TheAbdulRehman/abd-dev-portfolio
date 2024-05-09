@@ -52,8 +52,8 @@ const PortfolioContent: React.FC<PortfolioContentProps> = ({
                   <path
                     d="M8.45875 7.08031L16.9807 7.08019M16.9807 7.08019L16.9807 15.481M16.9807 7.08019L7.08125 16.9797"
                     stroke="white"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </Link>
@@ -61,11 +61,12 @@ const PortfolioContent: React.FC<PortfolioContentProps> = ({
           </div>
           <Image
             src={`${img}`}
-            height="1000"
-            width="1000"
-            className="h-[320px] md:h-[400px] w-full object-cover rounded-xl shadow-baseLight mb-4 lg:mb-6"
+            height="400"
+            width="500"
+            className="h-auto p-0 w-full object-cover overflow-hidden rounded-xl  mb-4 lg:mb-6"
             alt="thumbnail"
             loading="lazy"
+            priority={false}
           />
           <div className="flex gap-2.5 md:gap-3 flex-wrap">
             {tags && tags.map((tag, i) => <Tag key={i} text={tag} />)}
