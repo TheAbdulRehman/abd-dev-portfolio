@@ -36,10 +36,14 @@ export default function NavBar() {
     >
       <div className="container flex items-center justify-between ">
         <div className="flex items-center">
-          <Text2xl className={`text-white ${unbounded.className}`}>
-            Abdul Rehman
-          </Text2xl>
-          <ul className="md:flex space-x-6 hidden lg:ms-16">
+          <Link href="/">
+            <h4
+              className={`text-white text-[21px]/[130%] md:text-2xl/[130%] font-bold ${unbounded.className}`}
+            >
+              Abdul Rehman
+            </h4>
+          </Link>
+          <ul className="md:flex md:space-x-5 lg:space-x-6 hidden md:ms-8 lg:ms-16">
             <li className="relative">
               <Link
                 href="/"
@@ -62,10 +66,10 @@ export default function NavBar() {
             </li>
           </ul>
         </div>
-        <ul className="md:flex space-x-6 hidden lg:ms-16">
+        <ul className="md:flex md:space-x-5 lg:space-x-6 hidden md:ms-8 lg:ms-16">
           <li>
             <Link
-              href="Abdul-Rehman-Resume.pdf"
+              href="/Abdul-Rehman-Resume.pdf"
               target="_blank"
               className="text-white hover:text-yellow inline-flex items-center"
             >
@@ -178,7 +182,7 @@ export default function NavBar() {
           <ul className="space-y-4 mt-10 mb-5">
             <li>
               <Link
-                href="mailto:im.abd.dev@gmail.com"
+                href="/Abdul-Rehman-Resume.pdf"
                 target="_blank"
                 className="text-white hover:text-yellow inline-flex items-center"
               >
@@ -187,11 +191,20 @@ export default function NavBar() {
             </li>
             <li>
               <Link
-                href="Abdul-Rehman-Resume.pdf"
+                href="https://www.linkedin.com/in/abdul-rahman-98075b224/"
                 target="_blank"
                 className="text-white hover:text-yellow inline-flex items-center"
               >
                 <MdArrowOutward className="me-1 text-base" /> Linkedin
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="mailto:im.abd.dev@gmail.com"
+                target="_blank"
+                className="text-white hover:text-yellow inline-flex items-center"
+              >
+                <MdArrowOutward className="me-1 text-base" /> Email
               </Link>
             </li>
           </ul>

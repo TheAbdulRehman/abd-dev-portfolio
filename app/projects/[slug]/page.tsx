@@ -34,17 +34,19 @@ export default async function Page({ params }: { params: { slug: string } }) {
     notFound();
   }
   return (
-    <main className="container w-full md:w-4/5 lg:w-3/5 mt-4 md:mt-12 lg:mt-12">
+    <main className="container w-full lg:w-4/5 xl:w-3/5 mt-4 md:mt-12 lg:mt-12">
       <HeadingH3 className="mb-7 md:mb-9 lg:mb-10 text-white">
         {selectedItem.title}
       </HeadingH3>
-      <div className="flex justify-between items-start mb-7 md:mb-9 lg:mb-12">
+      <div className="sm:flex sm:justify-between sm:items-start mb-7 md:mb-9 lg:mb-12">
         <div>
-          <h6 className="font-bold text-lg text-white mb-2">Role</h6>
+          <h6 className="font-bold text-lg text-white mb-1 sm:mb-2">Role</h6>
           <TextBase className="text-white"> {selectedItem.role}</TextBase>
         </div>
-        <div>
-          <h6 className="font-bold text-lg text-white mb-2">Tech Stack:</h6>
+        <div className="mt-6 sm:mt-0">
+          <h6 className="font-bold text-lg text-white mb-1 sm:mb-2">
+            Tech Stack:
+          </h6>
           <TextBase className="text-white ">{selectedItem.techStack}</TextBase>
         </div>
       </div>

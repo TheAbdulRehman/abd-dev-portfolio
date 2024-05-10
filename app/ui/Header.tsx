@@ -4,7 +4,7 @@ import { unbounded } from "@/app/ui/fonts";
 const Header = () => {
   return (
     <>
-      <div className="">
+      <div>
         <div className="container">
           <header className="flex flex-col md:items-center md:justify-center pt-6 md:pt-9 lg:pt-12">
             <h3 className="text-lg md:text-xl lg:text-2xl text-white font-medium md:text-center">
