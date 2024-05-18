@@ -1,19 +1,5 @@
 export const projects = [
   {
-    title: "Hiba Logics",
-    shortDescription:
-      "I designed and developed a website for HibaLogics using Figma for design and HTML, CSS, Bootstrap, SCSS, and JavaScript for coding. I meticulously converted the Figma design into pixel-perfect code, elevating their brand with my services.",
-    slug: "hiba-logics",
-    featuredImage: "/hiba-logics.png",
-    tags: ["Bootstrap", "JavaScript", "AOS", "Figma"],
-    role: "Front-End Developer",
-    longDescription:
-      "I designed and developed a website for HibaLogics using Figma for design and HTML, CSS, Bootstrap, SCSS, and JavaScript for coding. I meticulously converted the Figma design into pixel-perfect code, elevating their brand with my services.",
-    screenShots: ["screenshot1.jpg", "screenshot2.jpg", "screenshot3.jpg"],
-    techStack: "Bootstrap, JavaScript, AOS, Figma",
-    demoLink: "https://hibalogics.com",
-  },
-  {
     title: "Intoobox",
     shortDescription:
       "Developed an ecommerce platform specializing in the sale of gift boxes and packages. Translated Photoshop designs into pixel-perfect responsive web. Implemented JavaScript functionalities for filters, custom sizing options, and color radios, alongside creating detail pages and image carousels.",
@@ -40,6 +26,20 @@ export const projects = [
     screenShots: ["screenshot1.jpg", "screenshot2.jpg", "screenshot3.jpg"],
     techStack: "Bootstrap, SCSS, JavaScript, jQuery",
     demoLink: "https://studio-spa.co.za",
+  },
+  {
+    title: "Hiba Logics",
+    shortDescription:
+      "I designed and developed a website for HibaLogics using Figma for design and HTML, CSS, Bootstrap, SCSS, and JavaScript for coding. I meticulously converted the Figma design into pixel-perfect code, elevating their brand with my services.",
+    slug: "hiba-logics",
+    featuredImage: "/hiba-logics.png",
+    tags: ["Bootstrap", "JavaScript", "AOS", "Figma"],
+    role: "Front-End Developer",
+    longDescription:
+      "I designed and developed a website for HibaLogics using Figma for design and HTML, CSS, Bootstrap, SCSS, and JavaScript for coding. I meticulously converted the Figma design into pixel-perfect code, elevating their brand with my services.",
+    screenShots: ["screenshot1.jpg", "screenshot2.jpg", "screenshot3.jpg"],
+    techStack: "Bootstrap, JavaScript, AOS, Figma",
+    demoLink: "https://hibalogics.com",
   },
   {
     title: "Media-M",

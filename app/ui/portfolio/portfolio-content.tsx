@@ -33,7 +33,7 @@ const PortfolioContent: React.FC<PortfolioContentProps> = ({
               </TextBase>
             </div>
             <div>
-              <Link href={`/projects/${slug}`} className="">
+              <Link href={`/project/${slug}`} className="">
                 <svg
                   width="24"
                   height="24"

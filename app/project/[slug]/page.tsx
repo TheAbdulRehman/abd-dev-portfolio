@@ -3,7 +3,6 @@ import { HeadingH3, BodyText, TextBase } from "@/app/ui/Text/TextStyles";
 import { projects } from "@/app/lib/data";
 import Image from "next/image";
 import Link from "next/link";
-import Acme from "@/public/hero-desktop.png";
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const prSlug = params.slug;

@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
-import { Text2xl } from "./Text/TextStyles";
 import { usePathname } from "next/navigation";
 import { unbounded } from "@/app/ui/fonts";
 
