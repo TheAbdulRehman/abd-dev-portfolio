@@ -25,7 +25,7 @@ export const projects = [
       "I converted Studio SPA PSD files into  Bootstrap with pixel-perfect design, ensuring responsiveness across mobile and tablet devices. Elevating user experience, also integrated mail functionality into form submissions with Laravel.",
     screenShots: ["screenshot1.jpg", "screenshot2.jpg", "screenshot3.jpg"],
     techStack: "Bootstrap, SCSS, JavaScript, jQuery",
-    demoLink: "https://studio-spa.co.za",
+    demoLink: "https://studiospa.co.za/",
   },
   {
     title: "Hiba Logics",
