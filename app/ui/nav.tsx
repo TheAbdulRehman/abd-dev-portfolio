@@ -77,7 +77,7 @@ export default function NavBar() {
           </li>
           <li>
             <Link
-              href="www.linkedin.com/in/abdul-rehman-98075b224"
+              href="https://www.linkedin.com/in/abdul-rehman-98075b224"
               target="_blank"
               className="text-white hover:text-yellow inline-flex items-center"
             >
